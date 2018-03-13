@@ -42,7 +42,7 @@ class PySSH(object):
         if sudoenabled:
             #fullcmd = "echo " + self.passwd + " | sudo -S -p ' ' " + cmd
             #fullcmd="echo " + self.passwd + " |   sudo -S -p '' " + cmd
-            #fullcmd="echo " + 'L0nd0n$Br1dge' + " | sudo -S  " + cmd
+            #fullcmd="echo " + '***********' + " | sudo -S  " + cmd
             fullcmd = "sudo -k yum list installed clamAv"
             print(fullcmd)
         else:

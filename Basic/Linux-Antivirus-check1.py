@@ -24,7 +24,6 @@ def run_command(Client):
     #session.exec_command(cmd)
     #stdin = session.makefile('wb', -1)
     #stdout = session.makefile('rb', -1)
-    #stdin.write("L0nd0n$Br1dge" +'\n')
     #stdin.flush()
     stdin, stdout, stderr = Client.exec_command(cmd)
     time.sleep(20)
@@ -56,7 +55,7 @@ def main():
         for server in line:
             print ("Connecting to the server - {}".format(server))
             global server
-            Client = ssh_connection(source_server = server , source_os_password = "L0nd0n$Br1dge")
+            Client = ssh_connection(source_server = server , source_os_password = "**********")
             #print(Client)
             run_command(Client)
             print("Closing Connection")

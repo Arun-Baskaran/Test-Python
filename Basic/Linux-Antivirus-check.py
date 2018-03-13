@@ -33,7 +33,7 @@ def main():
     with open(Server_List, 'r') as line:
         for server in line:
             print ("Connecting to the server")
-            ssh = ssh_connection(source_server=server, password=L0nd0n$Br1dge)
+            ssh = ssh_connection(source_server=server, password=*********)
             run_command(ssh)
             print("Closing Connection")
             ssh_close_connection(ssh)
