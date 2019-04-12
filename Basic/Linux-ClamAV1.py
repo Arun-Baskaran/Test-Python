@@ -2,8 +2,8 @@
 import paramiko
 import os
 import time
-file1 = "/home/local/MGMTPROD/baska010/ClamAv-Status"
-Server_List = "/home/local/MGMTPROD/baska010/server.list"
+file1 = "/home/ClamAv-Status"
+Server_List = "/homeserver.list"
 
 
 def ssh_connection(source_server, source_os_password):
